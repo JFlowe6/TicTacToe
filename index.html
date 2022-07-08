@@ -9,16 +9,23 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <section class="display">
+        Player <span class="display-player playerX">X</span>'s turn
+    </section>
     <div id="container">
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
     </div>
+    <section class="display announcer hide"></section>
+        <section class="controls">
+            <button id="reset">Reset</button>
+        </section>
 </body>
 </html>
