@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    background-color: #2222ff;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    width: 500px;
+    height: 500px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(166.666666667px, auto);
+    padding: 1rem;
+}
+
+
+/* Setting up the board borders, made use of the nth child for practise */
+.grid-item {
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    background-color: white;
+}
+
+#container :nth-child(1){
+    border-top-left-radius: 10%;
+}
+
+#container :nth-child(3){
+    border-right: none;
+    border-top-right-radius: 10%;
+}
+
+#container :nth-child(6){
+    border-right: none;
+}
+
+#container :nth-child(7){
+    border-bottom: none;
+    border-bottom-left-radius: 10%;
+}
+
+#container :nth-child(8){
+    border-bottom: none;
+}
+
+#container :last-child{
+    border:none;
+    border-bottom-right-radius: 10%;
+}
